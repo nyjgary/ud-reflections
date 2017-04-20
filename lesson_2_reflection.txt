@@ -7,14 +7,19 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+- Review staging area using git status to ensure changes fit our logical change criterion before committing 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+- Branches would be helpful when creating a different (experiment) version of the app, or when working concurrently on different new features; they are helpful because it allows us to work on new things that are meant to “break” while maintaining a fully functional (production-quality) version of the app
 
 How do the diagrams help you visualize the branch structure?
+- Helps us understand sequential relationships of commits, in turn helping us identify which commits are reachable within each branch 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+- All changes made in the two merges are now combined; they are represented by two branches combining to become one branch, with commits from both now reachable by the now-merged branch
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+- Pro is that it helps saves time and effort; con is that conflicts may not be resolved correctly 
